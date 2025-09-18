@@ -1,0 +1,16 @@
+--generate 10 random numbers. For every odd number, print left, for every even number, print right. Then print the number of lefts and rights total
+math.randomseed(os.time())
+left = 0
+right = 0
+for x = 1, 10 do
+    random = math.random(1,2)
+    if random%2==0 then
+        print("right")
+        right = right + 1
+    else
+        print("left")
+        left = left + 1
+    end
+end
+print("Total Left: "..left)
+print("Total Right "..right)
