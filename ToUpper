@@ -1,0 +1,4 @@
+-- input to uppercase
+print("Enter your text")
+var = io.read()
+print(string.upper(var))
