@@ -1,0 +1,15 @@
+--add two numbers and print the sum
+print("Enter a number")
+num = tonumber(io.read())
+while type(num) ~= "number" do
+    print("Invalid input. Enter a new number")
+    num = tonumber(io.read())
+end
+print("Enter another number")
+num2 = tonumber(io.read())
+while type(num2) ~= "number" do
+    print("Invalid input. Enter a new number")
+    num2 = tonumber(io.read())
+end
+sum = num+num2
+print("Total: " ..sum)
