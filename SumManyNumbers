@@ -1,0 +1,15 @@
+--allow user to input the sum of as many numbers as they want
+keepGoing = "y";
+sum = 0
+while keepGoing == "y" do
+    print "Enter a number"
+    num = tonumber(io.read())
+    while type(num) ~= "number" do
+        print("Invalid input. Enter a new number")
+        num = tonumber(io.read())
+        end
+    sum = sum + num
+    print("Would you like to enter another number? Enter y for yes. Enter anything else to quit")
+    keepGoing = io.read()
+    end
+print("Your total: "..sum)
