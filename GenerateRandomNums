@@ -1,0 +1,15 @@
+--allow the user to generate as many random numbers up to a chosen number as they want
+keepGoing = "y";
+math.randomseed(os.time())
+while keepGoing == "y" do
+    print "Enter the max value"
+    max = tonumber(io.read())
+    while max == nil do
+        print "Invalid input. Please enter a new number"
+        max = tonumber(io.read())
+    end
+    random = math.random(0,max)
+    print(random)
+    print "Would you like to generate another random number? Enter y to continue or anything else to quit"
+    keepGoing = io.read()
+end
